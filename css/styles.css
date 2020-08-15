@@ -231,10 +231,21 @@ h1,h2,h3,h4,h5 {
 .button.secondary {
     flex-wrap: wrap;
     padding: 10px 28px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     color: var(--primary-white-color);
     background-color: var(--accent-color);
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
+
+.button.primary:hover,
+.button.secondary:hover {
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    color: var(--accent-color);
+    background-color: var(--primary-white-color);
+    fill: var(--accent-color);
+}
+
+
 
 /*Modal*/
 
@@ -604,7 +615,12 @@ address {
     margin-left: 10px;
     width: 24px;
     height: 24px;
-    background-image: url(../images/svg/icon.send.svg);
+}
+.subscribe-svg {
+    width: 24px;
+    height: 24px;
+    margin-left: 10px;
+    fill: currentColor;
 }
 
 
