@@ -4,10 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Web Studio</title>
-    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@500;700&display=swap" 
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap" 
           rel="stylesheet"/>
     <link rel="stylesheet" href="./css/styles.css"/>
-    <link rel="stylesheet" href="./css/normalize.css"/>
+    <link rel="stylesheet"  href="./css/normalize.css"/>/>
 </head>
 <body>   
 
@@ -58,9 +58,18 @@
         <section class="hero">
             <div class="conteiner hero-conteiner">
                 <h1 class="hero-title">Эффективные решения<br> для вашего бизнеса</h1>
-                <a href="" class="button primary">Заказать услугу</a>    
+                <button class="button primary" data-modal-open>Заказать услугу</button>    
             </div>
         </section>
+        
+        <div class="backdrop is-hidden" data-modal>
+            <div class="modal">
+                <button class="btn-close" data-modal-close>
+                    <span class="close">&#10006;</span>
+                </button>
+            </div>
+        </div>
+
 
         <!--особенности-->
         <section class="section">
@@ -106,6 +115,7 @@
                 </ul>
             </div>
         </section>
+        
 
         <!--чем мы занимаемся-->
         <section class="section">
@@ -389,6 +399,8 @@
             </div>
         </div>
     </footer>
+    
+    <script src="./js/modal.js"></script>
 </body>
 </html>
 
